@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 });
 
 // Set the port for the server. If the environment variable 'Port' is not set, default to port 3000
-const port = process.env.Port || 3000;
+const port = process.env.PORT || 3000;
 
 app.use('/', require('./routes/contact.js'));
 
