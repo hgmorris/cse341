@@ -1,10 +1,18 @@
 
 const express = require('express');
-const router = express.Router();
+const app = express();
+const contactsRoutes = require('./routes/contacts.js');
 
-router.get('/', (req, res) => {
+// Use the contacts routes
+app.use('/contacts', contactsRoutes);
+
+// Default route
+app.get('/', (req, res) => {
     res.json({ message: 'Morris' });
-}
-);
+});
 
-module.exports = router;
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
