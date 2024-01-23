@@ -3,6 +3,6 @@
 GET http://localhost:3000/company
 ###
  
-GET http://localhost:3000/company/65ac4758886bf29154e5f06e
+GET http://localhost:3000/company/65ac4223461526bc38bf04b6
  
 # PRODUCTION DEPLOY
