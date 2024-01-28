@@ -1,0 +1,23 @@
+# Create a new contact
+POST http://localhost:3000/contacts
+
+
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "phone": "123-456-7890"
+}
+
+# Update a contact (replace :id with an existing contact id)
+
+PUT http://localhost:3000/contacts
+
+
+{
+  "name": "Updated User",
+  "email": "updated@example.com",
+  "phone": "987-654-3210"
+}
+
+# Delete a contact (replace :id with an existing contact id)
+DELETE http://localhost:3000/api/contacts/:id

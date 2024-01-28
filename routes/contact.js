@@ -5,7 +5,7 @@ const { ObjectId } = require('mongodb');
 const router = express.Router();
  
 // GET all contacts from CSE341 collection and contacts table
-router.get('/company', async (req, res) => {
+router.get('/contacts', async (req, res) => {
     try {
         const db = getDb();
         if (!db) {
@@ -26,7 +26,7 @@ router.get('/company', async (req, res) => {
 });
  
 // GET a single contact by ID
-router.get('/company/:id', async (req, res) => {
+router.get('/contacts/:id', async (req, res) => {
     try {
         const db = getDb();
         if (!db) {
