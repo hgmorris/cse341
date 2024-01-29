@@ -1,10 +1,10 @@
 
-function getMorris() {
+const getMorris = (req, res) => {
     return 'Morris!';
 }
-function getMorris2() {
-    return 'Morris!!!!';
+const getMorris2 = (req, res) => {
+    return 'Amour!!!!';
 }
 
-module.exports = {  getMorris, getMorris };
+module.exports = {  getMorris, getMorris2 };
 
