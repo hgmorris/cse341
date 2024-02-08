@@ -1,8 +1,11 @@
 ##
 # LOCAL HOST
-GET http://localhost:3000/company
+GET http://localhost:3000
 ###
  
 GET http://localhost:3000/company/65ac4223461526bc38bf04b6
  
-# PRODUCTION DEPLOY
+### PRODUCTION DEPLOY
+
+GET https://cse341-9noe.onrender.com
+###

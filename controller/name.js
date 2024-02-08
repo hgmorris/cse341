@@ -1,6 +1,6 @@
 
 const getMorris = (req, res) => {
-    return 'Morris!';
+    res.send('Morris!');
 }
 const getMorris2 = (req, res) => {
     return 'Amour!!!!';
